@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './items/menu/menu.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ManualesComponent } from './manuales/manuales.component';
+import { CabeceraComponent } from './items/cabecera/cabecera.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    ManualesComponent
+    ManualesComponent,
+    CabeceraComponent
   ],
   imports: [
     BrowserModule,

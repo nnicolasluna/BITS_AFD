@@ -1,5 +1,5 @@
 img {
-    height: 100px;
+    height: 80px;
     position: relative;
     margin-right: -15px;
 }
@@ -9,7 +9,7 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 1px;
 }
 
 ol {
@@ -18,7 +18,7 @@ ol {
     margin: 0;
     display: flex;
     align-items: center;
-    background-color: transparentize(#009E2D,0.02);
+    background-color: transparentize(#009E2D, 0.02);
     border-radius: 30px;
     padding: 5px 10px;
 
@@ -31,7 +31,8 @@ ol {
         padding: 5px 10px;
         transition: background-color 0.3s ease;
         border-radius: 30px;
-height: 100%;
+        height: 100%;
+
         a {
             text-decoration: none;
             color: white;
@@ -40,21 +41,23 @@ height: 100%;
         }
 
         mat-icon {
-            color: transparentize(white,0.2);
+            color: transparentize(white, 0.2);
             font-size: 24px;
         }
+
         .menu {
             color: #EC9426;
         }
+
         &:hover {
             background-color: darken(#009E2D, 10%);
         }
     }
 }
+
 .decorador {
     width: 30px;
     height: 65px;
-    background-color: transparentize(#EC9426,0.2);
+    background-color: transparentize(#EC9426, 0.2);
     margin-right: -25px;
 }
-
