@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="top-section">
+        <div class="logo-placeholder"></div>
+        <div class="top-text-content">
+            <div class="top-title">Recuperación Post Incendios</div>
+            <div class="top-separator">Y</div>
+            <div class="top-subtitle">Alternativas al Uso de Fuego</div>
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <div class="header">
+            <div class="navigation">
+
+                <button class="arrow" (click)="prevStep()" [disabled]="isPrevDisabled">&lt;</button>
+                <span class="progress">{{ currentStep }}/{{ totalSteps }}</span>
+                <button class="arrow" (click)="nextStep()" [disabled]="isNextDisabled">&gt;</button>
+            </div>
+            <h2 class="title">Fases del Trabajo</h2>
+        </div>
+        <div class="content">
+            <div class="fasse">
+                <div class="phase-indicator" [style.backgroundColor]="backgroundColor">
+                    FASE
+                    <span class="vector-indicator">
+                        {{ currentLetter }}
+                    </span>
+                </div>
+
+            </div>
+            <div class="description">
+                Diagnóstico de la situación actual de las áreas afectadas por el fuego a nivel municipal.
+                <div class="details">
+                    Información histórica por municipio, área protegida y pueblo Indígena, para la elaboración de
+                    documentos.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

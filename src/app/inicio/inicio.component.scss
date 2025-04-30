@@ -1,0 +1,123 @@
+:host {
+    /* background-color: #161616; */
+    display: block;
+    height: 100vh;
+    background-color: #3D3A3A;
+}
+
+
+.contenedorInicioEstatico {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__description {
+        color: white;
+        align-items: center;
+        background-color: #161616;
+        font-weight: bold;
+        border-radius: 30px;
+        width: 300px;
+
+        &--SinNegrilla {
+            font-weight: normal;
+        }
+    }
+
+}
+
+// Variables
+$dark-background: #333; // Adjust color to match image more closely if needed
+$text-color: #fff;
+$highlight-color: #ffc107; // Adjust color for the "FASE D" background
+$secondary-text-color: #aaa; // Color for subtitle and arrows
+$padding-base: 15px;
+$border-radius-base: 8px;
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $dark-background;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: $padding-base;
+}
+
+.container {
+    background-color: #222; // Slightly lighter dark for the card background
+    border-radius: $border-radius-base;
+    padding: $padding-base * 1.5;
+    max-width: 500px; // Adjust max-width as needed
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $padding-base;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: $padding-base / 2;
+
+    .arrow {
+        color: $secondary-text-color;
+        cursor: pointer;
+        font-size: 1.2em;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
+
+    .progress {
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+
+.title {
+    color: $highlight-color;
+    margin: 0;
+    font-size: 1.6em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.phase-indicator {
+    background-color: $highlight-color;
+    color: $dark-background;
+    display: inline-block;
+    padding: ($padding-base / 2) $padding-base;
+    border-top-right-radius: $border-radius-base;
+    border-bottom-right-radius: $border-radius-base;
+    font-weight: bold;
+    margin-bottom: $padding-base;
+    align-self: flex-start; // Aligns the tab to the left
+    // To create the specific tab shape, you might need pseudo-elements or a more complex approach.
+    // This provides a basic rounded tab shape on the right.
+}
+
+.description {
+    margin-bottom: $padding-base;
+    line-height: 1.5;
+    font-size: 1em;
+    color: $text-color;
+}
+
+.subtitle {
+    color: $secondary-text-color;
+    font-size: 0.9em;
+    text-align: right; // Based on the image layout
+}
