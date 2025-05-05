@@ -4,6 +4,7 @@ import { ManualesComponent } from './manuales/manuales.component';
 import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
+  { path: '**', redirectTo: '/inicio' },
   { path: 'manuales', component: ManualesComponent },
   { path: 'inicio', component: InicioComponent },
 ];

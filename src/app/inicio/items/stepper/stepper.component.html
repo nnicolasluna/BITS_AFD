@@ -22,17 +22,17 @@
             <div class="fasse">
                 <div class="phase-indicator" [style.backgroundColor]="backgroundColor">
                     FASE
-                    <span class="vector-indicator">
-                        {{ currentLetter }}
-                    </span>
                 </div>
-
+                <span class="vector-indicator" [style.backgroundColor]="backgroundColor">
+                    {{ currentLetter }}
+                </span>
             </div>
             <div class="description">
-                Diagnóstico de la situación actual de las áreas afectadas por el fuego a nivel municipal.
-                <div class="details">
-                    Información histórica por municipio, área protegida y pueblo Indígena, para la elaboración de
-                    documentos.
+                <div class="title-card">
+                    {{ currentTextTitle }}
+                </div>
+                <div class="details-card">
+                    {{ currentTextDescription }}
                 </div>
             </div>
 
